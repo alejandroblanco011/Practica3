@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Blogs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDownloads() {
+            var downloads = document.getElementById("downloads-list");
+            downloads.style.display = downloads.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" onclick="toggleDownloads()">Descargas</a>
+                    <ul id="downloads-list" style="display: none;">
+    <li><a href="Práctica 1.pdf" download="Practica 1.pdf">Archivo 1</a></li>
+    <li><a href="Reporte Practica 2.pdf" download="Reporte Practica 2.pdf">Archivo 2</a></li>
+    <li><a href="Práctica 3.pdf" download="Practica 3.pdf">Archivo 3</a></li>
+</ul>
+                </li>
+                
+                <li><a href="CONTACTANOS-3.html">Contáctanos</a></li>
+                <li class="bottom"><a href="acerca.html">Acerca de</a></li>
+            </ul>
+        </nav>
+        
+        <main class="content">
+            <header>
+                <img src="TEC.JPEG" alt="TEC" class="logo">
+                <h1>SELECCIÓN DE BLOG'S</h1>
+                <h2>Curso: Programación Web</h2>
+                <p>Elige un perfil para ver más información</p>
+            </header>
+            
+            <div class="profiles">
+                <div class="profile">
+                    <img src="foto.jpeg" alt="Alan">
+                    <a href="MyBlog.html" class="alan">ALAN</a>
+                </div>
+                <div class="profile">
+                    <img src="fotoAle.jpeg" alt="Alejandro">
+                    <a href="Blog Alejandro.html" class="alejandro">ALEJANDRO</a>
+                </div>
+                <div class="profile">
+                    <img src="tu_imagen.jpg.jpg" alt="Esau">
+                    <a href="blog.html" class="esau">ESAU</a>
+                </div>
+            </div>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RZbRfpAu4w4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
